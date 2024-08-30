@@ -1,8 +1,6 @@
-# The Invisibility Score Service
+# The Invisibility Score Service - API
 
-[id1]: ## "Definitely a unique acroynm"
-
-The Invisibility Score Service ([ISS][id1]) provides the means for an authenticated caller to determine a user's _Invisibility Score_ given a provided _Superhero Score_
+The REST API provides the interface for the user to interact with the service.
 
 ## Request
 

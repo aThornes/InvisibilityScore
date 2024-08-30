@@ -1,0 +1,5 @@
+{
+  "authoriser": "cognitoAuthoriser",
+  "method": "GET",
+  "path": "/invisibility-score"
+}

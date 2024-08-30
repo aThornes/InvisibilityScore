@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InvisibilityScoreResponse",
+  "description": "Response schema to retrieve invisibility score",
+  "type": "object",
+  "properties": {
+    "invisibilityScore": {
+      "description": "The invisibility score",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    }
+  },
+  "required": ["invisibilityScore"]
+}

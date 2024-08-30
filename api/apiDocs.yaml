@@ -1,0 +1,43 @@
+openapi: 3.0.1
+info:
+  description: Invisibility Score calcaulator
+  version: 0.0.1
+  title: Invisibility Score REST API
+tags:
+  - name: invisibility
+    description: Endpoints for invisibility score calculation
+paths:
+  /invisbility-score:
+    post:
+      tags:
+        - invisibility
+      summary: Calculate invisibility score
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                superheroScore:
+                  type: number
+                  description: The user's superhero score
+      responses:
+        "200":
+          description: Invisibility score calculated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  invisibilityScore:
+                    type: number
+                    description: Invisibility score of the person
+                  saved:
+                    type: boolean
+                    description: Whether the invisibility score was saved/updated
+        "400":
+          description: Invalid request
+        "403"
+          description: Forbidden
+        "500":
+          description: Internal server error

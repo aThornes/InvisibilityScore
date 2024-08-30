@@ -17,3 +17,9 @@ To run this environment ensure you have created your `.env` file, installed depe
 `yarn local`
 
 This will run the express server API on port 8080.
+
+## Build
+
+Webpack is userd in order to build the lambdas ready for terraform deployment.
+
+Run `yarn webpack` to build lambda files to the /dist directory

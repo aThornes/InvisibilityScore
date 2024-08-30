@@ -1,5 +1,6 @@
 {
   "authoriser": "cognitoAuthoriser",
   "method": "GET",
-  "path": "/invisibility-score"
+  "path": "/invisibility-score",
+  "timeout": 10
 }

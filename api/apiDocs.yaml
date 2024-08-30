@@ -37,7 +37,14 @@ paths:
                     description: Whether the invisibility score was saved/updated
         "400":
           description: Invalid request
-        "403"
+        "403":
           description: Forbidden
         "500":
           description: Internal server error
+      x-amazon-apigateway-integration:
+        httpMethod: POST
+        uri: >-
+          arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/{getInvisibilityScore_arn}/invocations
+        passthroughBehavior: when_no_match
+        timeoutInMillis: 10000
+        type: aws_proxy
